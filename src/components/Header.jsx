@@ -4,7 +4,7 @@ import NavButton from "./NavButton.jsx";
 
 const Header = () => {
   return (
-    <header className="bg-black/50 px-8 py-3 flex items-center justify-between">
+    <header className="px-8 py-3 flex items-center justify-between bg-transparent">
       <Logo />
       <NavLinks />
       <NavButton />

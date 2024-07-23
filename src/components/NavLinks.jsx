@@ -7,7 +7,7 @@ const NavLinks = () => {
         {navigationItems.map((link) => (
           <li
             key={link.id}
-            className="px-7 text-lg text-white"
+            className="px-5  text-lg"
           >
             <a href={link.href}>{link.title}</a>
           </li>

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Logo = ({ color = "white", height = 69, width = 144 }) => {
+const Logo = ({ color = "black", height = 69, width = 144 }) => {
   return (
     <svg
       width={String(width)}

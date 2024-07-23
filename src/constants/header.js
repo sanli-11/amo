@@ -4,10 +4,11 @@ import cart from "../assets/svg/cart.svg";
 import wishlist from "../assets/svg/wishlist.svg";
 
 const navigationItems = [
-  { id: 0, href: "/browse", title: "Browse" },
-  { id: 1, href: "/deals", title: "Hot Deals" },
-  { id: 2, href: "/new", title: "New Arrivals" },
-  { id: 3, href: "/blogs", title: "Blogs" },
+  { id: 0, href: "/", title: "Home" },
+  { id: 1, href: "/browse", title: "Browse" },
+  { id: 2, href: "/deals", title: "Hot Deals" },
+  { id: 3, href: "/new", title: "New Arrivals" },
+  { id: 4, href: "/blogs", title: "Blogs" },
 ];
 
 const navigationIcons = [
