@@ -1,11 +1,26 @@
-import Section from "./Section"
+import Section from "./Section";
+import SectionTitle from "./SectionTitle";
+import NavigationButtons from "./NavigationButtons";
 
 const Deals = () => {
-  return (
-    <Section>
-      
-    </Section>
-  )
-}
+  const handlePrev = () => {
+    //* TODO
+  };
 
-export default Deals
+  const handleNext = () => {
+    //* TODO
+  };
+
+  return (
+    <Section className="gap-y-12" padded>
+      <SectionTitle title={"Hot Deals"}>
+        <NavigationButtons
+          handleClickLeftArrow={handlePrev}
+          handleClickRightArrow={handleNext}
+        />
+      </SectionTitle>
+    </Section>
+  );
+};
+
+export default Deals;
