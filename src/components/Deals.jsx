@@ -3,6 +3,16 @@ import SectionTitle from "./SectionTitle";
 import NavigationButtons from "./NavigationButtons";
 import ProductRow from "./ProductRow";
 
+const watchesData = [
+  {
+    id: 0,
+    name: "Watch Series 8",
+    brand: "Apple",
+    price: 399,
+    discount: 10,
+  },
+];
+
 const Deals = () => {
   const handlePrev = () => {
     //* TODO
