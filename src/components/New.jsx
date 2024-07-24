@@ -3,17 +3,7 @@ import SectionTitle from "./SectionTitle";
 import NavigationButtons from "./NavigationButtons";
 import ProductRow from "./ProductRow";
 
-const watchesData = [
-  {
-    id: 0,
-    name: "Watch Series 8",
-    brand: "Apple",
-    price: 399,
-    discount: 10,
-  },
-];
-
-const Deals = () => {
+const New = () => {
   const handlePrev = () => {
     //* TODO
   };
@@ -24,7 +14,7 @@ const Deals = () => {
 
   return (
     <Section className="flex flex-col gap-y-10 xl:gap-y-9" padded>
-      <SectionTitle title={"Hot Deals"}>
+      <SectionTitle title={"New Arrivals"}>
         <NavigationButtons
           handleClickLeftArrow={handlePrev}
           handleClickRightArrow={handleNext}
@@ -35,4 +25,4 @@ const Deals = () => {
   );
 };
 
-export default Deals;
+export default New;
