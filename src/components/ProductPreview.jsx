@@ -20,7 +20,7 @@ const ProductPreview = ({ discount, name, brand, price }) => {
   return (
     <div className="relative flex flex-col justify-start items-center p-0.5">
       {discount && discountSticker}
-      <img src={SampleImage} alt="Sample Image" width={260} height={462} />
+      <img src={SampleImage} alt="Sample Product Image" width={260} height={462} />
       <div className="w-full p-1.5 flex justify-between items-center">
         <div className="flex flex-col justify-start">
           <h6 className="inline">{name}</h6>
