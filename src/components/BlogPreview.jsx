@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import SampleImage from "../assets/img/sample/L1020988.png";
 
-const BlogPreview = () => {
+const BlogPreview = ({ blogs }) => {
   return (
-    <div className="-mt-8">
+    <div className="-mt-2">
       {blogs.map((rev) => (
         <div key={rev.id} className="mt-12 grid grid-cols-2 gap-10">
           <img
@@ -26,6 +27,10 @@ const BlogPreview = () => {
       ))}
     </div>
   );
+};
+
+BlogPreview.propTypes = {
+  blogs: PropTypes.object,
 };
 
 export default BlogPreview;

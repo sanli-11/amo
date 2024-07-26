@@ -11,18 +11,21 @@ const products = [
     name: "Prospex SPB451",
     brand: "Seiko",
     price: 1000,
+    new: true,
   },
   {
     id: 2,
     name: "Navitimer",
     brand: "Breitling",
     price: 8000,
+    new: true,
   },
   {
     id: 3,
     name: "Daytona",
     brand: "Rolex",
     price: 15000,
+    new: true,
   },
   {
     id: 4,
@@ -50,7 +53,7 @@ const products = [
     name: "Nautilus",
     brand: "Patek Philippe",
     price: 30000,
-    discount: 5,
+    new: true,
   },
 ];
 

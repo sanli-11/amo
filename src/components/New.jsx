@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import NavigationButtons from "./NavigationButtons";
 import ProductRow from "./ProductRow";
 
-const New = () => {
+const New = ({ products }) => {
   const handlePrev = () => {
     //* TODO
   };
@@ -20,9 +21,13 @@ const New = () => {
           handleClickRightArrow={handleNext}
         />
       </SectionTitle>
-      <ProductRow />
+      <ProductRow productsList={products.filter((prod) => prod.new)} />
     </Section>
   );
+};
+
+New.propTypes = {
+  products: PropTypes.object,
 };
 
 export default New;

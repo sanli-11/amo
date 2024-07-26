@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import NavigationButtons from "./NavigationButtons";
 import BlogPreview from "./BlogPreview";
 
-const LatestBlogs = () => {
+const LatestBlogs = ({ blogs }) => {
   const handlePrev = () => {
     //* TODO
   };
@@ -13,16 +14,20 @@ const LatestBlogs = () => {
   };
 
   return (
-    <Section className="flex flex-col gap-y-10 xl:gap-y-9" padded>
+    <Section padded>
       <SectionTitle title={"Latest Blogs"}>
         <NavigationButtons
           handleClickLeftArrow={handlePrev}
           handleClickRightArrow={handleNext}
         />
       </SectionTitle>
-      <BlogPreview />
+      <BlogPreview blogs={blogs} />
     </Section>
   );
+};
+
+LatestBlogs.propTypes = {
+  blogs: PropTypes.object,
 };
 
 export default LatestBlogs;
