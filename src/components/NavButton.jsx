@@ -2,7 +2,7 @@ import { navigationIcons } from "../constants/header";
 
 const NavButton = () => {
   return (
-    <nav>
+    <nav className="font-secondary">
       <ul className="flex items-center text-lg">
         {navigationIcons.map((item) => {
           const icon = (
@@ -15,9 +15,7 @@ const NavButton = () => {
                 <a href={item.href}>{icon}</a>
               ) : (
                 <button type="button" className="flex items-stretch">
-                  <span className="self-end pr-2.5">
-                    {item.title}
-                  </span>
+                  <span className="self-end pr-2.5">{item.title}</span>
                   {icon}
                 </button>
               )}
