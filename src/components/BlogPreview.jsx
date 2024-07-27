@@ -15,7 +15,7 @@ const BlogPreview = ({ blogs }) => {
           />
           <div className="mt-6 flex flex-col justify-center gap-8">
             <h1 className="text-2xl font-secondary">{rev.title}</h1>
-            <p className="text-justify">{rev.description}</p>
+            <p className="text-justify text-sm">{rev.description}</p>
             <a
               className="flex items-center justify-end gap-x-1.5 before:content-['—']"
               href={rev.site}

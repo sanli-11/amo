@@ -2,7 +2,7 @@ import { navigationItems } from "../constants/header";
 
 const NavLinks = () => {
   return (
-    <nav className="font-secondary">
+    <nav>
       <ul className="flex justify-evenly items-center">
         {navigationItems.map((link) => (
           <li key={link.id} className="px-5 text-lg">

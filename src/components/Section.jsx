@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Section = ({ className, children, padded }) => {
   return (
     <section
-      className={`${String(className)} ${padded ? "pt-16 pb-28 px-20" : "pb-10"}`}
+      className={`${String(className)} ${padded ? "mt-16 mb-28 mx-20" : "mb-10"}`}
     >
       {children}
     </section>

@@ -2,7 +2,7 @@ import { navigationIcons } from "../constants/header";
 
 const NavButton = () => {
   return (
-    <nav className="font-secondary">
+    <nav>
       <ul className="flex items-center text-lg">
         {navigationIcons.map((item) => {
           const icon = (
