@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import SampleImage from "../assets/img/sample/13.png";
+import ProductImageContainer from "./ProductImageContainer";
 
 const ProductPreview = ({ discount, name, brand, price }) => {
   const discountSticker = (
@@ -19,12 +20,12 @@ const ProductPreview = ({ discount, name, brand, price }) => {
 
   return (
     <div className="relative flex flex-col justify-start items-center p-0.5">
+      <ProductImageContainer image={SampleImage} name={name} />
       {discount && discountSticker}
-      <img src={SampleImage} alt="Sample Product Image" width={260} height={462} />
       <div className="w-full p-1.5 flex justify-between items-center">
         <div className="flex flex-col justify-start">
           <h6 className="inline">{name}</h6>
-          <span className="text-xs text-stone-400">${brand}</span>
+          <span className="text-xs text-stone-400">{brand}</span>
         </div>
         {discount ? prices : <span>{`$${price}`}</span>}
       </div>

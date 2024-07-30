@@ -1,4 +1,5 @@
 import { navigationItems } from "../constants/header";
+import { ShoppingBasket } from "lucide-react";
 
 const NavLinks = () => {
   return (
