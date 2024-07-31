@@ -14,7 +14,7 @@ const Deals = ({ products }) => {
   };
 
   return (
-    <Section className="flex flex-col gap-y-10 xl:gap-y-9" padded>
+    <Section className="flex flex-col gap-y-10 xl:gap-y-12" padded>
       <SectionTitle title={"Hot Deals"}>
         <NavigationButtons
           handleClickLeftArrow={handlePrev}

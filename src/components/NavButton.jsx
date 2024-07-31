@@ -15,7 +15,7 @@ const NavButton = () => {
                 <a href={item.href}>{icon}</a>
               ) : (
                 <button type="button" className="flex items-stretch">
-                  <span className="pr-2.5 self-end text-sm">{item.title}</span>
+                  <span className="pr-2.5 self-end text-sm leading-4">{item.title}</span>
                   {icon}
                 </button>
               )}

@@ -9,16 +9,16 @@ import blogs from "./constants/blogs";
 
 function App() {
   return (
-    <>
+    <div className="bg-stone-100">
       <Header />
-      <main className="max-w-screen-2xl mx-auto">
+      <main className="max-w-screen-2xl mx-auto bg-white">
         <Hero />
         <Deals products={products} />
         <New products={products} />
         <LatestBlogs blogs={blogs} />
         <Footer />
       </main>
-    </>
+    </div>
   );
 }
 
