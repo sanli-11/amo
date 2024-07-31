@@ -1,3 +1,8 @@
+import facebook from "../assets/svg/social-facebook.svg";
+import instagram from "../assets/svg/social-instagram.svg";
+import snapchat from "../assets/svg/social-snapchat.svg";
+import whatsapp from "../assets/svg/social-whatsapp.svg";
+
 const footer = [
   {
     id: 0,
@@ -32,9 +37,30 @@ const footer = [
     id: 3,
     header: "Follow Us",
     links: [
-      { id: 0, title: "Facebook", href: "facebook.com" },
-      { id: 1, title: "Instagram", href: "instagram.com" },
-      { id: 2, title: "Twitter", href: "x.com" },
+      {
+        id: 0,
+        src: facebook,
+        alt: "Facebook",
+        href: "facebook.com",
+      },
+      {
+        id: 1,
+        src: instagram,
+        alt: "Instagram",
+        href: "instagram.com",
+      },
+      {
+        id: 2,
+        src: snapchat,
+        alt: "Snapchat",
+        href: "snapchat.com",
+      },
+      {
+        id: 3,
+        src: whatsapp,
+        alt: "WhatsApp",
+        href: "whatsapp.com",
+      },
     ],
   },
 ];

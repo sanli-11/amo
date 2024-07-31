@@ -9,15 +9,19 @@ const Footer = () => {
             <h3 className="mb-6 text-xl uppercase text-yellow-500">
               {col.header}
             </h3>
-            <ul className={col.id === 3 && "flex gap-x-4"}>
+            <ul className={col.id === 3 && "flex gap-x-5"}>
               {col.links.map((row) => {
                 return (
                   <li key={row.id} className={col.id === 3 ? "mb-2" : "mb-0.5"}>
                     <a
                       href={row.href}
-                      className="text-xs uppercase text-stone-400"
+                      className="text-xs uppercase leading-[1.7rem] text-stone-400"
                     >
-                      {row.title}
+                      {row.src ? (
+                        <img src={row.src} alt={row.alt} width={24} height={24} />
+                      ) : (
+                        row.title
+                      )}
                     </a>
                   </li>
                 );
