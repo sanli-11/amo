@@ -5,6 +5,15 @@ import NavigationButtons from "./NavigationButtons";
 import ProductRow from "./ProductRow";
 
 const Deals = ({ products }) => {
+  const length = products.length;
+  const cols = 4;
+  const prodListExists = length > 0;
+  const prodToShow = prodListExists
+    ? length < cols
+      ? length + 1
+      : cols
+    : 0;
+
   const handlePrev = () => {
     //* TODO
   };
@@ -21,7 +30,11 @@ const Deals = ({ products }) => {
           handleClickRightArrow={handleNext}
         />
       </SectionTitle>
-      <ProductRow productsList={products.filter((prod) => prod.discount)} />
+      <ProductRow
+        productsList={products
+          .filter((prod) => prod.discount)
+          .slice(0, prodToShow)}
+      />
     </Section>
   );
 };

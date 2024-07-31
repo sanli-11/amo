@@ -13,7 +13,7 @@ const ProductPreview = ({ name, brand, price, discount, latest }) => {
         <Sticker className="absolute top-4 left-4" discount={discount} />
       )}
       {latest && <Sticker className="absolute top-12 left-4" />}
-        <Wishlist className="absolute top-4 right-4" />
+      <Wishlist className="absolute top-4 right-4" />
       <div className="w-full px-1.5 flex justify-between items-center">
         <div className="flex flex-col justify-start">
           <h6 className="inline leading-7">{name}</h6>
